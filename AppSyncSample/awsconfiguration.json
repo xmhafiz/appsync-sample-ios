@@ -1,0 +1,10 @@
+{
+  "AppSync": {
+        "Default": {
+            "ApiUrl": "",
+            "Region": "ap-southeast-1",
+            "ApiKey": "",
+            "AuthMode": "API_KEY"
+        }
+   }
+}
