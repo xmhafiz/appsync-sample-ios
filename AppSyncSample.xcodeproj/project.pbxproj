@@ -12,6 +12,7 @@
 		86761DCF22F42F7600E04C06 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 86761DCD22F42F7600E04C06 /* awsconfiguration.json */; };
 		86761DD122F42F9700E04C06 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86761DD022F42F9700E04C06 /* Constant.swift */; };
 		86761DD322F45FB700E04C06 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86761DD222F45FB700E04C06 /* MyModel.swift */; };
+		86761DD522F48A1100E04C06 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86761DD422F48A1100E04C06 /* FormViewController.swift */; };
 		8681903822EF1646006AFC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681903722EF1646006AFC25 /* AppDelegate.swift */; };
 		8681903A22EF1646006AFC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681903922EF1646006AFC25 /* ViewController.swift */; };
 		8681903D22EF1647006AFC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8681903B22EF1647006AFC25 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		86761DCD22F42F7600E04C06 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		86761DD022F42F9700E04C06 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		86761DD222F45FB700E04C06 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		86761DD422F48A1100E04C06 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		8681903422EF1646006AFC25 /* AppSyncSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSyncSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8681903722EF1646006AFC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8681903922EF1646006AFC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				8681903722EF1646006AFC25 /* AppDelegate.swift */,
 				8681903922EF1646006AFC25 /* ViewController.swift */,
+				86761DD422F48A1100E04C06 /* FormViewController.swift */,
 				8681903B22EF1647006AFC25 /* Main.storyboard */,
 				8681903E22EF164B006AFC25 /* Assets.xcassets */,
 				86761DCC22F42F7600E04C06 /* API.swift */,
@@ -205,6 +208,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -214,6 +218,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86761DD522F48A1100E04C06 /* FormViewController.swift in Sources */,
 				86761DD322F45FB700E04C06 /* MyModel.swift in Sources */,
 				8681903A22EF1646006AFC25 /* ViewController.swift in Sources */,
 				86761DCE22F42F7600E04C06 /* API.swift in Sources */,

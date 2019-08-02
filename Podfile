@@ -7,4 +7,5 @@ target 'AppSyncSample' do
 
   # Pods for AppSyncSample
   pod 'AWSAppSync', ' ~> 2.13.0'
+  pod 'Toast-Swift', '~> 5.0.0'
 end

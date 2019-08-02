@@ -8,9 +8,11 @@ PODS:
   - SQLite.swift (0.11.6):
     - SQLite.swift/standard (= 0.11.6)
   - SQLite.swift/standard (0.11.6)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - AWSAppSync (~> 2.13.0)
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AWSCore
     - ReachabilitySwift
     - SQLite.swift
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   AWSAppSync: 6dd42e4c25ff01cfa652392bdc080bb9ec2b6d5f
   AWSCore: 22b6bbc6761ca9981d878155d11bc02edd681a64
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SQLite.swift: 46d890be8601964454bd3392527f863d1b802d45
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: bcb0c642bd115a5b079533e658c3294d5ee21386
+PODFILE CHECKSUM: ce7d5ed9aebea7509c1d295fe9a9447d7862fdb1
 
 COCOAPODS: 1.6.1

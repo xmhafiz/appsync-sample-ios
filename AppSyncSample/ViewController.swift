@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         appSyncClient = appDelegate.appSyncClient
         
         initView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         fetchData()
     }
     
@@ -51,6 +55,13 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showUpdateData", let controller = segue.destination as? FormViewController, let indexPath = tableView.indexPathForSelectedRow {
+            let item = todos[indexPath.row]
+            controller.item = item
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -65,6 +76,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = item?.title
         cell.detailTextLabel?.text = item?.id
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showUpdateData", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

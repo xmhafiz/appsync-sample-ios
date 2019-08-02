@@ -32,14 +32,60 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="j6d-nv-cEb"/>
+                    <navigationItem key="navigationItem" id="j6d-nv-cEb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zFg-yD-zdF">
+                            <connections>
+                                <segue destination="QxO-fT-oak" kind="show" id="lQE-yL-1qs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="96F-U9-Vp9" id="sEb-rH-2ie"/>
+                        <segue destination="QxO-fT-oak" kind="show" identifier="showUpdateData" id="bNN-oa-CjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="93.75"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="3fK-BT-z4Q">
+            <objects>
+                <viewController id="QxO-fT-oak" customClass="FormViewController" customModule="AppSyncSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buN-TT-YdW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-ql-66G">
+                                <rect key="frame" x="24" y="112" width="366" height="726"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hkf-ql-66G" firstAttribute="leading" secondItem="dX4-Xf-zvZ" secondAttribute="leading" constant="24" id="Fqt-6Q-CaV"/>
+                            <constraint firstItem="dX4-Xf-zvZ" firstAttribute="bottom" secondItem="Hkf-ql-66G" secondAttribute="bottom" constant="24" id="GQA-vK-fyD"/>
+                            <constraint firstItem="Hkf-ql-66G" firstAttribute="top" secondItem="dX4-Xf-zvZ" secondAttribute="top" constant="24" id="SdL-nh-f7O"/>
+                            <constraint firstItem="dX4-Xf-zvZ" firstAttribute="trailing" secondItem="Hkf-ql-66G" secondAttribute="trailing" constant="24" id="yqn-yl-h4d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dX4-Xf-zvZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PsM-I3-kl0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aB3-N2-Loe">
+                            <connections>
+                                <action selector="handleSaveAction:" destination="QxO-fT-oak" id="kSP-p0-0NA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="Hkf-ql-66G" id="VbU-7B-go5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLU-fE-6pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ue-1u-UqT">
@@ -60,4 +106,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="738.61607142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bNN-oa-CjT"/>
+    </inferredMetricsTieBreakers>
 </document>
